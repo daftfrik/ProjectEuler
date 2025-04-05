@@ -1,4 +1,4 @@
-public class Problem6 extends Problem{
+public class Problem06 extends Problem{
     @Override
     public void solve(){
         System.out.print(sumSquareDifference(1, 100));

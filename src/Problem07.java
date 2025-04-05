@@ -1,4 +1,4 @@
-public class Problem7 extends Problem{
+public class Problem07 extends Problem{
     @Override
     public void solve(){
         System.out.print(nthPrime(10001));

@@ -1,4 +1,4 @@
-public class Problem9 extends Problem{
+public class Problem09 extends Problem{
     @Override
     public void solve(){
         System.out.print(pyTripletProduct(1000));

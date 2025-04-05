@@ -1,4 +1,4 @@
-public class Problem2 extends Problem{
+public class Problem02 extends Problem{
     @Override
     public void solve(){
         System.out.print(evenFibSum(4000000));

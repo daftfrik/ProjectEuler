@@ -1,6 +1,6 @@
 import java.math.BigInteger;
 
-public class Problem5 extends Problem{
+public class Problem05 extends Problem{
     @Override
     public void solve(){
         System.out.print(minEDinRange(1, 20));

@@ -1,4 +1,4 @@
-public class Problem3 extends Problem{
+public class Problem03 extends Problem{
     @Override
     public void solve(){
         System.out.print(lpFactor(600851475143L));

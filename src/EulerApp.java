@@ -13,15 +13,15 @@ public class EulerApp {
 
     Problem getProblem(int n){
         return switch (n) {
-            case 1 -> new Problem1();
-            case 2 -> new Problem2();
-            case 3 -> new Problem3();
-            case 4 -> new Problem4();
-            case 5 -> new Problem5();
-            case 6 -> new Problem6();
-            case 7 -> new Problem7();
-            case 8 -> new Problem8();
-            case 9 -> new Problem9();
+            case 1 -> new Problem01();
+            case 2 -> new Problem02();
+            case 3 -> new Problem03();
+            case 4 -> new Problem04();
+            case 5 -> new Problem05();
+            case 6 -> new Problem06();
+            case 7 -> new Problem07();
+            case 8 -> new Problem08();
+            case 9 -> new Problem09();
             case 10 -> new Problem10();
             case 11 -> new Problem11();
             case 12 -> new Problem12();
@@ -50,6 +50,7 @@ public class EulerApp {
             case 35 -> new Problem35();
             case 36 -> new Problem36();
             case 37 -> new Problem37();
+            case 38 -> new Problem38();
             default -> new Problem();
         };
     }

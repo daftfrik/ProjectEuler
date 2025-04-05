@@ -1,4 +1,4 @@
-public class Problem4 extends Problem{
+public class Problem04 extends Problem{
     @Override
     public void solve(){
         System.out.print(lpProduct(100, 1000));

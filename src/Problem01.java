@@ -1,4 +1,4 @@
-public class Problem1 extends Problem{
+public class Problem01 extends Problem{
     @Override
     public void solve(){
         System.out.print(multipleSum(3, 5, 1000));
