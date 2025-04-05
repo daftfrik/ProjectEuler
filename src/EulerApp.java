@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class EulerApp {
-    int solvedProblems = 37;
+    int solvedProblems = 42;
     int problemToRun;
     boolean runAll = false;
     long timeForAll = 0L;
@@ -53,6 +53,8 @@ public class EulerApp {
             case 38 -> new Problem38();
             case 39 -> new Problem39();
             case 40 -> new Problem40();
+            case 41 -> new Problem41();
+            case 42 -> new Problem42();
             default -> new Problem();
         };
     }
@@ -82,7 +84,7 @@ public class EulerApp {
 
     void runProblem(int n){
         Problem p = getProblem(n);
-        System.out.print("Project Euler Problem " + n + " Solution: ");
+        System.out.print("Problem " + n + " Solution: ");
         final long startTime = System.nanoTime();
         p.solve();
         final long endTime = System.nanoTime();
