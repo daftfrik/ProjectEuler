@@ -38,7 +38,7 @@ public class Problem22 extends Problem{
     }
 
     void readFile() {
-        Scanner in = null;
+        Scanner in;
         try {
             in = new Scanner(new File("names.txt")).useDelimiter("[\",]+");
         } catch (FileNotFoundException e) {

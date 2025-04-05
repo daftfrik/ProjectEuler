@@ -111,8 +111,8 @@ public class Problem13 extends Problem{
             };
     BigInteger bigSum(){
         BigInteger result = BigInteger.valueOf(0);
-        for(int i = 0; i < sumNums.length; i++){
-            result = result.add(sumNums[i]);
+        for (BigInteger sumNum : sumNums) {
+            result = result.add(sumNum);
         }
         return result;
     }

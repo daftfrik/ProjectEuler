@@ -12,9 +12,9 @@ public class Problem8 extends Problem{
             numbers[i] = digitString.substring(i, i + len);
         }
         long largestProduct = 0;
-        for(int i = 0; i < numbers.length; i++){
-            long product = stringProduct(numbers[i]);
-            if(product > largestProduct){
+        for (String number : numbers) {
+            long product = stringProduct(number);
+            if (product > largestProduct) {
                 largestProduct = product;
             }
         }
@@ -25,8 +25,8 @@ public class Problem8 extends Problem{
         if(number.contains("0"))return 0;
         char[] digits = number.toCharArray();
         long result = 1;
-        for(int i = 0; i < digits.length; i++){
-            result = result * (digits[i] - '0');
+        for (char digit : digits) {
+            result = result * (digit - '0');
         }
         return result;
     }

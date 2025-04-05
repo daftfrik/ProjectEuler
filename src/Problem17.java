@@ -19,7 +19,7 @@ public class Problem17 extends Problem{
             {"", "Thousand", "Million", "Billion"};
 
     String convertToWords(int n){
-        String res = "";
+        StringBuilder res = new StringBuilder();
         int group = 0;
         if(n == 0)return "Zero";
         while(n > 0){
@@ -37,13 +37,12 @@ public class Problem17 extends Problem{
                 }
                 if(value > 0)temp += units[value] + " ";
                 temp += multiplier[group] + " ";
-                res = temp + res;
+                res.insert(0, temp);
             }
             n /= 1000;
             group++;
         }
-        //ystem.out.print(res);
-        return res.trim();
+        return res.toString().trim();
     }
 
     int sumLetters(String s){

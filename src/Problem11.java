@@ -42,13 +42,13 @@ public class Problem11 extends Problem{
 
     int maxHorizontalProduct(){
         int maxProduct = 0;
-        for(int row = 0; row < grid.length; row++){
-            for(int col = 0; col < grid[col].length - 4; col ++){
+        for (int[] ints : grid) {
+            for (int col = 0; col < grid[col].length - 4; col++) {
                 int product = 1;
-                for(int i = 0; i < 4; i++){
-                    product *= grid[row][col + i];
+                for (int i = 0; i < 4; i++) {
+                    product *= ints[col + i];
                 }
-                if(product > maxProduct)maxProduct = product;
+                if (product > maxProduct) maxProduct = product;
             }
         }
         return maxProduct;

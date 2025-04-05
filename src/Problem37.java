@@ -17,22 +17,22 @@ public class Problem37 extends Problem{
 
     boolean isTruncPrime(int n){
         for(long i = 10; i <= n; i*=10)
-            if(!isPrime(n % (int)i))return false;
+            if(notPrime(n % (int) i))return false;
         while(n != 0){
-            if(!isPrime(n))return false;
+            if(notPrime(n))return false;
             n /= 10;
         }
         return true;
     }
 
-    boolean isPrime(int k){
-        if(k <= 1)return false;
-        if(k == 2 || k == 3)return true;
-        if(k%2 == 0 || k%3 == 0)return false;
+    boolean notPrime(int k){
+        if(k <= 1)return true;
+        if(k == 2 || k == 3)return false;
+        if(k%2 == 0 || k%3 == 0)return true;
 
         for(int i = 5; i*i <= k; i = i + 6){
-            if(k % i == 0 || k % (i + 2) == 0)return false;
+            if(k % i == 0 || k % (i + 2) == 0)return true;
         }
-        return true;
+        return false;
     }
 }

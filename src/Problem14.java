@@ -6,7 +6,7 @@ public class Problem14 extends Problem{
 
     int[] cache;
     int longestChain(int n){
-        int cl = 0;
+        int cl;
         int lc = 0;
         int lcSeed = 0;
         cache = new int[n];

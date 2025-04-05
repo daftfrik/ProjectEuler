@@ -14,7 +14,7 @@ public class Problem16 extends Problem{
     }
 
     int sumStringDigits(String s){
-        String temp = "0";
+        String temp;
         int sum = 0;
         for(int i = 0; i < s.length(); i++){
             char ch = s.charAt(i);

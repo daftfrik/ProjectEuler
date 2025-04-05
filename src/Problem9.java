@@ -5,10 +5,9 @@ public class Problem9 extends Problem{
     }
 
     int pyTripletProduct(int n){
-        int limit = n;
-        for(int i = 1; i <= limit; i++){
-            for(int j = i+1; j <= limit; j++){
-                int k = limit - i - j;
+        for(int i = 1; i <= n; i++){
+            for(int j = i+1; j <= n; j++){
+                int k = n - i - j;
                 if(isTriplet(i, j, k)) return i * j * k;
             }
         }
