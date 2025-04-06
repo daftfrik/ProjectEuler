@@ -56,6 +56,8 @@ public class EulerApp {
             case 41 -> new Problem41();
             case 42 -> new Problem42();
             case 43 -> new Problem43();
+            case 44 -> new Problem44();
+            case 45 -> new Problem45();
             default -> new Problem();
         };
     }
