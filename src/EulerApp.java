@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
 public class EulerApp {
-    int solvedProblems = 42;
+    int solvedProblems = 49;
     int problemToRun;
     boolean runAll = false;
-    long timeForAll = 0L;
+    long timeForAll = 0;
 
     public static void main(String[] args){
         EulerApp app = new EulerApp();
@@ -60,6 +60,8 @@ public class EulerApp {
             case 45 -> new Problem45();
             case 46 -> new Problem46();
             case 47 -> new Problem47();
+            case 48 -> new Problem48();
+            case 49 -> new Problem49();
             default -> new Problem();
         };
     }
