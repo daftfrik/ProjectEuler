@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class EulerApp {
-    int solvedProblems = 49;
+    int solvedProblems = 50;
     int problemToRun;
     boolean runAll = false;
     long timeForAll = 0;
