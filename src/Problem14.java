@@ -28,11 +28,8 @@ public class Problem14 extends Problem{
                 length += cache[(int)n];
                 break;
             }
-            if(n % 2 == 0){
-                n /= 2;
-            }else{
-                n = (3*n) + 1;
-            }
+            if(n % 2 == 0) n /= 2;
+            else n = (3 * n) + 1;
             length++;
         }
         cache[start] = length;
