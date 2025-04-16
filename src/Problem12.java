@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Problem12 extends Problem{
     @Override
     public void solve(){
@@ -5,22 +7,27 @@ public class Problem12 extends Problem{
     }
 
     long highDivTri(int n){
-        int triN = 0, triangle = 0;
-        while(true){
-            triN++;
-            triangle += triN;
-            if(divCount(triangle) > n)return triangle;
+        ArrayList<Integer> smallest = new ArrayList<>();
+        smallest.add(0);
+
+        int index = 0;
+        int triangle = 0;
+        while (smallest.size() < n){
+            index++;
+            triangle += index;
+
+            if(smallest.size() > 300 && triangle % 10 != 0)continue;
+
+            int divisors = divCount(triangle);
+            while(smallest.size() <= divisors) smallest.add(triangle);
         }
+        return smallest.get(smallest.size()-1);
     }
 
-    int divCount(long n){
+    static int divCount(long n){
         int total = 0;
         int end = (int) Math.sqrt(n);
-        for(int i = 1; i <= end; i++){
-            if(n % i == 0){
-                total += 2;
-            }
-        }
+        for(int i = 1; i <= end; i++) if (n % i == 0) total += 2;
         return total;
     }
 }
